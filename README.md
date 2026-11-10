@@ -1,6 +1,10 @@
 # bAIes-IDP-OpenMM
-OpenMM implementation of bAIes
 
+<p align="center">
+  <img src="Visual_Abstract.png" width="1000">
+</p>
+
+OpenMM implementation of bAIes
 
 Please cite the following references when using this tool:
 
