@@ -4,7 +4,7 @@
   <img src="Visual_Abstract.png" width="1000">
 </p>
 
-OpenMM implementation of bAIes
+OpenMM implementation of bAIes: Atomic resolution ensemble predictions of Intrinsically Disordered using AI structure predictors.
 
 Please cite the following references when using this tool:
 
