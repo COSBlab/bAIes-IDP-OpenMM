@@ -10,7 +10,7 @@ Please cite the following references when using this tool:
 
 - V. Schnapka, T. Morozova, S. Sen, M. Bonomi. Atomic resolution ensembles of intrinsically disordered with Alphafold. Nature Communications (2026). doi: [https://doi.org/10.1038/s41467-026-69172-y](https://doi.org/10.1038/s41467-026-69172-y)
 
-- V. Schnapka, N. Portal, M. Bonomi. Leveraging state-of-the-art AI structure predictors to generate atomic resolution ensembles of intrinsically disordered proteins. BioRxiv (2026). doi: []()
+- V. Schnapka, N. Portal, M. Bonomi. Leveraging state-of-the-art AI structure predictors to generate atomic resolution ensembles of intrinsically disordered proteins. BioRxiv (2026). doi: [https://doi.org/10.64898/2026.11.10.765624 ](https://doi.org/10.64898/2026.11.10.765624 )
 
 
 ## Installation instructions
