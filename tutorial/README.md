@@ -23,7 +23,9 @@ Ensure that your structure predictor outputs the distograms [here](link)
 Run on the terminal:
 
 ```bash
-./1-prepare_bAIes.bash -pdb <path_to_prediction_pdb>.pdb -pkl <path_to_distograms>.pkl -out <path_to_output>
+./1-prepare_bAIes.bash -pdb <path_to_prediction_pdb>.pdb \
+                       -pkl <path_to_distograms>.pkl \
+                       -out <path_to_output>
 ```
 
 ### 2. Run bAIes.
