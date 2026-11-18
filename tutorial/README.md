@@ -42,4 +42,4 @@ You can run a `coil` simulation by omitting the -baies argument.
 
 ## Simulation parameters
 
-`2-run_bAIes.bash` calls the `bAIes_openMM.py` script in the `scripts` directory. You can directly tune the wanted number of steps, simulation time step and frame saving interval in `2-run_bAIes.bash`. You can further personalize bAIes_openMM.py with your desired features.
+`2-run_bAIes.bash` calls the `bAIes_openMM.py` script in the `scripts` directory. You can directly tune the wanted number of steps, simulation time step and frame saving interval in `2-run_bAIes.bash`. You can also personalize bAIes_openMM.py with your desired features.
