@@ -34,6 +34,8 @@ Run on the terminal:
                        -out <output_directory>
 ```
 
+This command will read the pdb model, protonate it if necessary and deposit the protonated version in the <output_directory> under the same name. It will also read the distograms, analyze them and output the bAIes input file in the <output_directory>.
+
 ### 2. Run bAIes.
 
 Run on the terminal:
@@ -46,6 +48,24 @@ Run on the terminal:
 
 You can run a `coil` simulation by omitting the -baies argument.
 
-## Simulation parameters
+## Example
+
+To run a bAIes simulation of PaaA2, deposit the predicted PDB model (PaaA2.pdb) and associated distograms (PaaA2.pkl) in Predictions/PaaA2. Then run the following to prepare the inputs:
+
+```bash
+./1-prepare_bAIes.bash -pdb predictions/PaaA2/PaaA2_prediction.pdb \
+                       -pkl predictions/PaaA2/PaaA2_esm.pkl \
+                       -out bAIes_simulations/PaaA2
+```
+
+Finally, after checking the simulation parameters, run the following:
+
+```bash
+./2-run_bAIes.bash -pdb bAIes_simulations/PaaA2/PaaA2_prediction.pdb \
+                   -baies bAIes_simulations/PaaA2/bAIes_params.dat \
+                   -out bAIes_simulations/PaaA2
+```
+
+## Tuning the simulation parameters
 
 `2-run_bAIes.bash` calls the `bAIes_openMM.py` script in the `scripts` directory. You can directly tune the wanted number of steps, simulation time step and frame saving interval in `2-run_bAIes.bash`. You can also personalize bAIes_openMM.py with your desired features.
