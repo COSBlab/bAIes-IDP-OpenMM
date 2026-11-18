@@ -1,6 +1,12 @@
 # bAIes-IDP-OpenMM
 
-Using bAIes with openMM
+You can run bAIes with openMM in this directory.
+
+You will find here the following directories:
+* `scripts`, which contains the necessary python scripts to run bAIes
+* `predictions`, the directory where you can add your predictions. You will find an example subdirectory with a prediction of PaaA2.
+* `force_field`, which contains the coil prior force field.
+* `bAIes_simulation`, which contains an example output for the preparation of a bAIes simulation of PaaA2.
 
 ## Quickstart
 
