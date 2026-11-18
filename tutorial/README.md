@@ -33,6 +33,8 @@ Run on the terminal:
 Run on the terminal:
 
 ```bash
-./2-run_bAIes.bash -pdb <path_to_bAIes_pdb>.pdb -baies <path_to_baies_params>.dat -out <path_to_output>
+./2-run_bAIes.bash -pdb <path_to_bAIes_pdb>.pdb \
+                   -baies <path_to_baies_params>.dat \
+                   -out <path_to_output>
 ```
 
