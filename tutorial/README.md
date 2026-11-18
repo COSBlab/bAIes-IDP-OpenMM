@@ -31,7 +31,7 @@ Run on the terminal:
 ```bash
 ./1-prepare_bAIes.bash -pdb <path_to_prediction_pdb>.pdb \
                        -pkl <path_to_distograms>.pkl \
-                       -out <path_to_output>
+                       -out <output_directory>
 ```
 
 ### 2. Run bAIes.
@@ -41,7 +41,7 @@ Run on the terminal:
 ```bash
 ./2-run_bAIes.bash -pdb <path_to_bAIes_pdb>.pdb \
                    -baies <path_to_baies_params>.dat \
-                   -out <path_to_output>
+                   -out <output_directory>
 ```
 
 You can run a `coil` simulation by omitting the -baies argument.
