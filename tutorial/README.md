@@ -53,15 +53,15 @@ You can run a `coil` simulation by omitting the -baies argument.
 To run a bAIes simulation of PaaA2, deposit the predicted PDB model (PaaA2.pdb) and associated distograms (PaaA2.pkl) in Predictions/PaaA2. Then run the following to prepare the inputs:
 
 ```bash
-./1-prepare_bAIes.bash -pdb predictions/PaaA2/PaaA2_prediction.pdb \
-                       -pkl predictions/PaaA2/PaaA2_esm.pkl \
+./1-prepare_bAIes.bash -pdb predictions/PaaA2/PaaA2.pdb \
+                       -pkl predictions/PaaA2/PaaA2.pkl \
                        -out bAIes_simulations/PaaA2
 ```
 
 Finally, after checking the simulation parameters, run the following:
 
 ```bash
-./2-run_bAIes.bash -pdb bAIes_simulations/PaaA2/PaaA2_prediction.pdb \
+./2-run_bAIes.bash -pdb bAIes_simulations/PaaA2/PaaA2.pdb \
                    -baies bAIes_simulations/PaaA2/bAIes_params.dat \
                    -out bAIes_simulations/PaaA2
 ```
