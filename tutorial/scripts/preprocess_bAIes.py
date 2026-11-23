@@ -277,11 +277,6 @@ def read_input(pdb_file):
     return {i+1: (a.id, a.resname, a.chainID, a.resid) for i, a in enumerate(atoms)}
 
 
-#def read_input(filename):
-#    prepare_model(filename, ph=7.0)
-#    return read_model(filename)
-
-
 def read_pkl(pkl_file, convf="softmax"):
     """
     Reads the distograms pkl file outputed from Alphafold and returns the bins (63) and distograms (NxNx64) in the format adapted for the following preprocessing.
