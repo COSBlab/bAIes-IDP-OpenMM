@@ -80,7 +80,7 @@ python ./inspect_distograms.py -pkl predictions/PaaA2/PaaA2.pkl \
                                -out distograms_ave_matrix.npy
 ```
 
-If you also have the bAIes parameter file, you can include them along with the protein model to visualize where the bAIes forces are:
+If you also have the bAIes parameter file, you can include them along with the protein model to visualize the pairwise bAIes forces:
 
 ```bash
 python ./inspect_distograms.py -pkl predictions/PaaA2/PaaA2.pkl \
