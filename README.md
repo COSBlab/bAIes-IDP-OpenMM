@@ -29,7 +29,7 @@ conda activate baies
 ### 2. Install OpenMM and dependencies
 
 ```bash
-conda install -c conda-forge openmm=8.3 cuda-version=13
+conda install -c conda-forge numpy openmm=8.3 cuda-version=13 matplotlib lmfit scipy mdanalysis
 ```
 
 The `cuda-version` pin selects the CUDA build of OpenMM. Set it to a CUDA version that is supported by both your GPU driver and your OpenMM release (check with `nvidia-smi`). On a machine without a GPU, omit it to get the CPU build.
