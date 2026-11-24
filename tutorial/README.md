@@ -38,13 +38,26 @@ This command will read the pdb model, protonate it if necessary and deposit the 
 
 ### 2. Run bAIes.
 
-Run on the terminal:
+Run the following on the terminal to start a bAIes simulation.:
 
 ```bash
 ./2-run_bAIes.bash -pdb <path_to_bAIes_pdb>.pdb \
                    -baies <path_to_baies_params>.dat \
                    -out <output_directory>
 ```
+
+To modify the simulation time and frame save interval, go inside the script and modify the associated lines:
+
+```
+# Target number of frames:
+Nsteps=50000000
+# Simulation timestep in fs
+tstep=0.002
+# Save interval in number of steps.
+save_interval=50000
+```
+
+Here, we are running 0.002fs*50,000,000=100ns of simulations where we save frames every 0.002fs*50,000=100ps. We do not recommend the change of the simulation time step.
 
 ### 2.bis Run coil.
 
