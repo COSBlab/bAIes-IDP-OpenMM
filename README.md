@@ -46,4 +46,11 @@ To use `cif2pdb.py`:
 pip install biopython
 ```
 
-### 3. Run bAIes.
+## Environment creation and installation from a .yml file
+
+An example environment can be found in `baies.yml`. To directly install the environment, run in the terminal:
+
+```bash
+conda env create -f baies.yml
+```
+
