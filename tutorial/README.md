@@ -57,7 +57,7 @@ tstep=0.002
 save_interval=50000
 ```
 
-Here, we are running 0.002fs*50,000,000=100ns of simulations where we save frames every 0.002fs*50,000=100ps. We do not recommend the change of the simulation time step.
+Here, we are running 0.002fs x 50,000,000 = 100ns of simulations where we save frames every 0.002fs x 50,000 = 100ps. We do not recommend the change of the simulation time step.
 
 ### 2.bis Run coil.
 
