@@ -1,5 +1,9 @@
 # bAIes-IDP-OpenMM
 
+<p align="center">
+  <img src="VA.png" width="800">
+</p>
+
 You can run bAIes with openMM in this directory.
 
 You will find here the following directories:
