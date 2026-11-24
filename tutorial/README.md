@@ -12,7 +12,7 @@ You will find here the following directories:
 * `force_field`, which contains the coil prior force field.
 * `bAIes_simulation`, which contains an example output for the preparation of a bAIes simulation of PaaA2.
 
-## Quickstart
+## A/ Quickstart
 
 ### 0. Run a structure prediction
 
@@ -94,7 +94,7 @@ python ./scripts/baies_openMM.py \
                   -prior 'none'
 ```
 
-## Example
+## B/ Example
 
 To run a bAIes simulation of PaaA2, deposit the predicted PDB model (PaaA2.pdb) and associated distograms (PaaA2.pkl) in Predictions/PaaA2. Then run the following to prepare the inputs:
 
@@ -112,11 +112,11 @@ Finally, after checking the simulation parameters, run the following:
                    -out bAIes_simulations/PaaA2
 ```
 
-## Tuning the simulation parameters
+## C/ Tuning the simulation parameters
 
 `2-run_bAIes.bash` calls the `bAIes_openMM.py` script in the `scripts` directory. You can directly tune the wanted number of steps, simulation time step and frame saving interval in `2-run_bAIes.bash`. You can also directly personalize bAIes_openMM.py with your desired features.
 
-## Inspecting the distograms
+## D/ Inspecting the distograms
 
 You can inspect the distograms with `inspect_distograms.py`. This script will calculate the pairwise average distance and plot the average distance matrix. You can use it on a prediction as follows:
 
