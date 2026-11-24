@@ -80,6 +80,10 @@ python ./inspect_distograms.py -pkl predictions/PaaA2/PaaA2.pkl \
                                -out distograms_ave_matrix.npy
 ```
 
+<p align="center">
+  <img src="PaaA2_distograms.png" width="1000">
+</p>
+
 If you also have the bAIes parameter file, you can include them along with the protein model to visualize the pairwise bAIes forces:
 
 ```bash
@@ -90,6 +94,9 @@ python ./inspect_distograms.py -pkl predictions/PaaA2/PaaA2.pkl \
                                -pdb bAIes_simulations/PaaA2/PaaA2.pdb
 ```
 
+<p align="center">
+  <img src="PaaA2_distograms_wbaies.png" width="1000">
+</p>
 
 
 
