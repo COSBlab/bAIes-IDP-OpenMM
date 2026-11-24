@@ -118,7 +118,7 @@ Finally, after checking the simulation parameters, run the following:
 
 ## D/ Inspecting the distograms
 
-You can inspect the distograms with `inspect_distograms.py`. This script will calculate the pairwise average distance and plot the average distance matrix. You can use it on a prediction as follows:
+You can inspect the predicted distograms with `inspect_distograms.py`. This script will calculate the pairwise average distance and plot the average distance matrix. You can use it on a prediction as follows:
 
 ```bash
 python ./inspect_distograms.py -pkl predictions/PaaA2/PaaA2.pkl \
