@@ -40,4 +40,10 @@ To check that OpenMM sees your hardware:
 python -m openmm.testInstallation
 ```
 
+To use `cif2pdb.py`:
+
+```bash
+pip install biopython
+```
+
 ### 3. Run bAIes.
