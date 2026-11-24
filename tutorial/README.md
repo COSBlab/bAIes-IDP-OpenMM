@@ -68,4 +68,28 @@ Finally, after checking the simulation parameters, run the following:
 
 ## Tuning the simulation parameters
 
-`2-run_bAIes.bash` calls the `bAIes_openMM.py` script in the `scripts` directory. You can directly tune the wanted number of steps, simulation time step and frame saving interval in `2-run_bAIes.bash`. You can also personalize bAIes_openMM.py with your desired features.
+`2-run_bAIes.bash` calls the `bAIes_openMM.py` script in the `scripts` directory. You can directly tune the wanted number of steps, simulation time step and frame saving interval in `2-run_bAIes.bash`. You can also directly personalize bAIes_openMM.py with your desired features.
+
+## Inspecting the distograms
+
+You can inspect the distograms with `inspect_distograms.py`. This script will calculate the pairwise average distance and plot the average distance matrix. You can use it on a prediction as follows:
+
+```bash
+python ./inspect_distograms.py -pkl predictions/PaaA2/PaaA2.pkl \
+                               -plot distograms_ave_matrix.pdf \
+                               -out distograms_ave_matrix.npy
+```
+
+If you also have the bAIes parameter file, you can include them along with the protein model to visualize where the bAIes forces are:
+
+```bash
+python ./inspect_distograms.py -pkl predictions/PaaA2/PaaA2.pkl \
+                               -plot distograms_ave_matrix.pdf \
+                               -out distograms_ave_matrix.npy \
+                               -baies bAIes_simulations/PaaA2/bAIes_params.dat \
+                               -pdb bAIes_simulations/PaaA2/PaaA2.pdb
+```
+
+
+
+
