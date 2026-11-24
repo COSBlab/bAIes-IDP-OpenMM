@@ -46,7 +46,36 @@ Run on the terminal:
                    -out <output_directory>
 ```
 
-You can run a `coil` simulation by omitting the -baies argument.
+### 2.bis Run coil.
+
+You can run a `coil` simulation by simply omitting the -baies argument.
+
+```bash
+./2-run_bAIes.bash -pdb <path_to_bAIes_pdb>.pdb \
+                   -out <output_directory>
+```
+
+### 2.ter Run bAIes-N
+
+You can run a "more confident" bAIes prediction with bAIes-N. The bAIes forces will be stronger but less forgiving in case of prediction errors.
+To do so, go inside `2-run_bAIes.bash` and modify the command that launches bAIes to add the `-prior 'none'` flag. This will deactivate the error marginalization and effectively run bAIes-N instead of bAIes. The command will then look like this:
+
+```
+echo "Running bAIes-N..."
+python ./scripts/baies_openMM.py \
+                  -pdb ${PDB} \
+                  -xtc ${OUT}/bAIes_trajectory.xtc \
+                  -ff ./force_field/coil_202602.xml \
+                  -cmap ./force_field/cmap_20240524.cmap \
+                  -temp 298.15 \
+                  -friction 0.01 \
+                  -tstep 0.002 \
+                  -Nsteps ${Nsteps} \
+                  -save_xtc ${save_interval} \
+                  -save_stdout ${save_interval} \
+                  -baies ${BAIES} \
+                  -prior 'none'
+```
 
 ## Example
 
