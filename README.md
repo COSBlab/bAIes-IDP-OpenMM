@@ -48,7 +48,7 @@ To use `cif2pdb.py`:
 pip install biopython
 ```
 
-An example environment can be found in `baies.yml`. To directly install the environment, run in the terminal:
+An example environment can be found in `baies.yml`. Instead of running all the above, you may directly install this environment with the command below. First check that your NVIDIA driver supports the CUDA version pinned in the file (the "CUDA Version" shown by nvidia-smi must be higher or equal to the pinned one). If it doesn't, update your driver or change the CUDA pin in the file. Run in the terminal:
 
 ```bash
 conda env create -f baies.yml
