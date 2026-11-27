@@ -28,6 +28,8 @@ conda activate baies
 
 ### 2. Install OpenMM and dependencies
 
+#### OpenMM and Python libraries
+
 ```bash
 conda install -c conda-forge numpy openmm=8.3 cuda-version=12.6 matplotlib lmfit scipy mdanalysis
 ```
@@ -46,11 +48,13 @@ To use `cif2pdb.py`:
 pip install biopython
 ```
 
-## Environment creation and installation from a .yml file
-
 An example environment can be found in `baies.yml`. To directly install the environment, run in the terminal:
 
 ```bash
 conda env create -f baies.yml
 ```
+
+#### GROMACS
+
+GROMACS can be downloaded and installed from [here](https://manual.gromacs.org/current/download.html)
 
